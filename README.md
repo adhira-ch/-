@@ -1,4 +1,4 @@
-# Astro Bob's blog
+# Adhira's Personal Website
 
 A responsive, personal blog template, built with Astro and Tailwind CSS.
 
