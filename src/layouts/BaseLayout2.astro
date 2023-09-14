@@ -53,6 +53,9 @@ const { metaData: { authorName } } = config;
 
       <nav class="mr-6">
         <ul id="primary-nav" class="flex grow gap-8 items-center justify-center z-[100]" data-visible="false">
+          {navLinks.filter(ele => ele.link !== '/blog' && ele.link !== '/search' && ele.link !== '/tags')
+          .map(ele =>
+          <NavListItem navLink={ele.link} activeLink={activeLink} icon={ele.icon} />)}
           <li>
             <!-- Theme, Light/Dark mode -->
             <label id="themeSetting" class="swap swap-rotate">
